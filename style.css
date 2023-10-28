@@ -1,0 +1,389 @@
+html {
+  font-size: 16px;
+}
+
+.bgimg {
+  background-image: linear-gradient(rgba(115, 111, 116, 0.539),
+      rgba(115, 111, 116, 0.539)), url(pexels-ella-olsson-1640773.jpg);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  width: 100%;
+  height: 700px;
+  animation-name: muj;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+.navset{
+  background-color:#dbb81b;
+}
+li.nav-item {
+  margin-right: 15px;
+}
+li.nav-item:after {
+  display: block;
+  content: '';
+  margin-top: -4px;
+  border-bottom: solid 2px yellow;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in;
+  transform-origin: 100%;
+}
+li.nav-item:hover:after {
+  transform: scaleX(1);
+  transform-origin: 0%;
+}
+.nbrand{
+  color: hsl(56, 98%, 49%);
+  font-size: 2rem;
+  font-family:cursive;
+  
+  font-style: italic;
+  font-weight: bold;
+}
+.nbrand:hover{
+  color: hsl(56, 98%, 49%);
+
+}
+.nbrand span{
+  color: #050708;
+}
+a.nav-link{
+  color: #000000;
+  font-weight: bold;
+}
+
+.headerset {
+  padding-top: 200px;
+
+}
+
+.headerset h2 {
+  font-size: 47px;
+  text-transform: uppercase;
+  margin-top: 3vh;
+  font-style: italic;
+  font-family: fangsong;
+  margin-bottom: 16px;
+}
+
+.headerset h1 {
+  color: rgb(255, 238, 0);
+  font-size: 12vw;
+   line-height: 1.3;
+  font-family: 'Water Brush', cursive;
+  font-weight: bold;
+  font-family: 'Birthstone Bounce', cursive;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  animation: 
+    typing 5s infinite;
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50% ,0px);
+}
+
+@keyframes typing {
+  from { width: 0%}
+  to { width: 100% }
+}
+.Reservebut{
+  border: 1px solid black;
+  border-radius: 0px 25px;
+  background-color: aliceblue;
+  color: black;
+  text-transform: uppercase;
+}
+.Reservebut:hover{
+  border: 1px solid black;
+  border-radius: 25px 0px;
+  color: aliceblue;
+  background-color: black;
+}
+
+ .navbar-toggler-icon {
+  background-image: url(
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke=' rgb(0, 0, 0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler {
+  border-color: rgb(0, 0, 0);
+}
+
+
+
+/* ////////////////////////////////////main//////////////////////////////////////////////////// */
+.well {
+  background-color: #f2dedecf;
+  padding: 80px 0px;
+}
+
+.welcome h2 {
+  text-transform: lowercase;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  line-height: 50px;
+  font-family: "Dancing Script", cursive;
+  color: #4c4d4c;
+  margin-bottom: 25px;
+}
+
+.welcome h6 {
+  font-size: 20px;
+  line-height: 37px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+
+.welcome .logo2 {
+  width: 14%;
+}
+
+.photogallary {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: azure;
+}
+
+.photo h2 {
+  font-size: 60px;
+  line-height: 50px;
+  font-family: "Dancing Script", cursive;
+  color: rgb(76, 77, 76);
+  margin-bottom: 55px;
+}
+
+.thumb {
+  position: relative;
+  display: block;
+}
+
+.thumb img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.thumb:hover img {
+  transform: scale(1.1);
+}
+
+.thumb-over {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.thumb-over-btn {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.thumb:hover .thumb-over {
+  opacity: 1;
+}
+
+/* //////////////////////////////////////////////// */
+.well3 {
+  padding-top: 60px;
+  padding-bottom: 70px;
+  background-color: #e4e4fb;
+}
+
+h2.text-center {
+  text-transform: capitalize;
+  letter-spacing: 5px;
+  /* margin-top: 141px; */
+  font-size: 50px;
+  line-height: 50px;
+  font-family: "Dancing Script", cursive;
+  color: #4c4d4c;
+  margin-bottom: 60px;
+}
+
+.grid_4 {
+  margin-left: 5px;
+  margin-bottom: 10px;
+  border-style: double;
+  border-color: #050708;
+  border-width: 3px;
+  border-collapse: separate;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ins {
+  padding: 64px 30px 60px 47px;
+}
+
+.mod {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #909090;
+}
+
+/* =======================================deal of the day============================================ */
+.deal {
+  padding-top: 71px;
+  padding-bottom: 29px;
+  height: 522px;
+}
+
+h3 span {
+  font-weight: bold;
+  font-size: 5rem;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.grid_6 h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: bolder;
+}
+
+p.off {
+  font-size: 1.3rem;
+  font-style: italic;
+  margin-top: 24px;
+}
+
+.grid_6 .bot {
+  color: red;
+  margin-top: 5px;
+  font-size: larger;
+}
+
+/* /////////////////////////////////////////our testimonial///////////////////////////// */
+.our-testemonial {
+  padding: 50px 0px;
+  background: linear-gradient(to bottom,
+      rgba(43, 231, 128, 0.877) 0%,
+      rgba(43, 231, 128, 0.877) 65%,
+
+      white 65%,
+      white 100%);
+}
+
+.testi {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.card {
+  padding: 15px;
+  box-shadow: 9px 9px 10px #9E9E9E;
+}
+
+.card:hover {
+  box-shadow: 12px 12px 5px hsl(0, 1%, 37%);
+}
+/* /////////////////////////////////////footer//////////////////////////////////////// */
+h3.text-center.d-content {
+  font-size: 18px;
+  font-weight: 500;
+}
+  .row1 {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #d4caca;
+    justify-content: center;
+    margin-left: 5px;
+}
+.footer i {
+  font-size: 45px;
+  margin-left: 10px;
+}
+i:hover{
+  font-size: 50px;
+}
+
+i.fa.fa-facebook-official.font-size-5 {
+  color: blue;
+}
+
+i.fa.fa-instagram {
+  color: #ff005c;
+}
+
+i.fa.fa-whatsapp {
+  color: green;
+}
+
+i.fa.fa-twitter {
+  color: deepskyblue;
+}
+
+i.fa.fa-linkedin-square {
+  color: dodgerblue;
+}
+@media(max-width:767px) {
+  .deal {
+    height: 105vh;
+    overflow: hidden;
+  }
+  .our-testemonial {
+    background: linear-gradient(to left,
+        white 0%,
+        white 50%,
+        rgba(43, 231, 128, 0.877) 50%,
+        rgba(43, 231, 128, 0.877) 100%);
+  }
+}
+@media(max-width:991px) {
+  h3 span {
+    font-size: 3rem;
+  }
+  .grid_6 h3 {
+    font-size: 1rem;
+  }
+  li.nav-item:after{
+    max-width: 20%;
+  }
+
+}
+@media(min-width:991){
+  li.nav-item {
+    margin-right: 25px;
+}
+}
+@media(max-width:576px) {
+  footer{
+    margin-top: 43px;
+  }
+  li.nav-item:after{
+    max-width: 25%;
+  }
+  
+ 
+}
+@media(max-width:400px)
+{
+
+}
+@keyframes muj {
+  50% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(salmon-1485014_1921.jpg);
+  }
+  100% {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(page-1_img04_original.jpg);
+  }
+}
